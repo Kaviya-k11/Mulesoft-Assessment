@@ -1,0 +1,13 @@
+movie.db;
+
+CREATE TABLE movie(movie_name text,actor text,actoress text,director text,year_of_release integer NOT NULL);
+
+INSERT INTO movie(movie_name,actor,actoress ,director ,year_of_release) VALUES('Vikram','KamalHasan','Lokesh',2022,);
+INSERT INTO movie(movie_name,actor,actoress ,director ,year_of_release) VALUES('Beast','Vijay','PoojaHedge','Nelson',2022,);
+INSERT INTO movie(movie_name,actor,actoress ,director ,year_of_release) VALUES('Enemy','Vishal','Mirlani Ravi','Anand Shankar',2021,);
+INSERT INTO movie(movie_name,actor,actoress ,director ,year_of_release) VALUES(' Viswasam','Ajith','Nayanthara','Siva',20019,);
+
+//for query
+SELECT * FROM movies;
+
+SELECT movie FROM movies WHERE actor='Vishal';
