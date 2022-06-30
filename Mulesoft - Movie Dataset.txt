@@ -1,13 +1,30 @@
 movie.db;
 
-CREATE TABLE movie(movie_name text,actor text,actoress text,director text,year_of_release integer NOT NULL);
+CREATE TABLE Movie(Name text,Actor text,Actress text,Director text,Year of release integer NOT NULL,Ratings integer NOT NULL );
 
-INSERT INTO movie(movie_name,actor,actoress ,director ,year_of_release) VALUES('Vikram','KamalHasan','Lokesh',2022,);
-INSERT INTO movie(movie_name,actor,actoress ,director ,year_of_release) VALUES('Beast','Vijay','PoojaHedge','Nelson',2022,);
-INSERT INTO movie(movie_name,actor,actoress ,director ,year_of_release) VALUES('Enemy','Vishal','Mirlani Ravi','Anand Shankar',2021,);
-INSERT INTO movie(movie_name,actor,actoress ,director ,year_of_release) VALUES(' Viswasam','Ajith','Nayanthara','Siva',20019,);
+INSERT INTO Movie(Name,Actor,Actress,Director,Year of release,Ratings) VALUES('Vikram','KamalHasan','Lokesh',2022,5);
+INSERT INTO Movie(Name,Actor,Actress,Director,Year of release,Ratings) VALUES('Beast','Vijay','PoojaHedge','Nelson',2022,4);
+INSERT INTO Movie(Name,Actor,Actress,Director,Year of release,Ratings) VALUES('Enemy','Vishal','Mirlani Ravi','Anand Shankar',2021,3);
+INSERT INTO Movie(Name,Actor,Actress,Director,Year of release,Ratings) VALUES('Viswasam','Ajith','Nayanthara','Siva',2019,4);
+INSERT INTO Movie(Name,Actor,Actress,Director,Year of release,Ratings) VALUES('KRK','Vijaysethupathi','Samantha','Vigensh',2022,5);
+INSERT INTO Movie(Name,Actor,Actress,Director,Year of release,Ratings) VALUES('Baubali','Prabas','Anushka','Rajamouli',2022,4);
+INSERT INTO Movie(Name,Actor,Actress,Director,Year of release,Ratings) VALUES('RRR','Ramcharan','AilaBhatt','Rajamouli',2017,5);
+INSERT INTO Movie(Name,Actor,Actress,Director,Year of release,Ratings) VALUES('Soorarai Pottru','Surya','Aparna',Sudha Kongara Prasad',2020,5);
+
 
 //for query
-SELECT * FROM movies;
+SELECT * FROM Movie;
 
-SELECT movie FROM movies WHERE actor='Vishal';
+SELECT * FROM Movie WHERE Actor='Vishal';
+
+SELECT * FROM Movie WHERE  Name='Viswasam';
+
+SELECT * FROM Movie ORDER BY Ratings;
+
+SELECT * FROM Movie;
+
+SELECT  Name, Ratings FROM Movie;
+SELECT * FROM Movie;
+
+
+
